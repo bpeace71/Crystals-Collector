@@ -1,10 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<script type="text/javascript"></script>
+	<title>Crystals Collector</title>
+	<script src="assets/javascript/jquery-3.1.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
+	
+	<div class="container">
+
+		<div class="jumbotron">
+			<!-- header at the top -->
+			<h1>Crystals Collector!</h1>
+			<!-- then come instructions -->
+			<h4>The wizard requires a certain amount of mana to cast his spell.</h4>
+			<h4>Each crystal adds a specific amount to his total mana, generating different amounts of mana each time a new spell is started.</h4>
+			<h4>You are his apprentice.</h4>
+			<h4>Your job is to tap into his crystals and pass him the mana to cast his spells. You need to generate the exact number of mana required.</h4>
+			<h4>If you generate too little, he can not cast the spell.</h4>
+			<h4>If you generate too much, it will blow up in his face.</h4>
+		</div>
+
+		<!-- random number div and wins/losses div -->
+		<div class="row">
+			<div class="col-md-3 col-md-offset-1 randomNumberDiv">
+				<h2 id="randomNumber">random#</h2>
+			</div>
+			<div class="col-md-3 col-md-offset-1 winsLossesDiv">
+				<p id="castTally">Spells Cast: </p>
+				<p id="failTally">Spells Failed: </p>
+			</div>
+		</div>
+
+		<!-- gems -->
+		<div class="row">
+			<div class="col-md-1 col-md-offset-1 gem" value="gem1">
+				<img src="assets/images/gem1.png" height="200%" width="200%">
+			</div>
+			<div class="col-md-1 col-md-offset-1 gem" value="gem2">
+				<img src="assets/images/gem2.png" height="200%" width="200%">
+			</div>
+			<div class="col-md-1 col-md-offset-1 gem" value="gem3">
+				<img src="assets/images/gem3.png" height="175%" width="175%">
+			</div>
+			<div class="col-md-1 col-md-offset-1 gem" value="gem4">
+				<img src="assets/images/gem4.png" height="200%" width="200%">
+			</div>
+		</div>
+		
+		<!-- score text row -->
+		<div class="row">
+			<div class="col-md-3 col-md-offset-1 scoreDiv">
+				<p>Mana Generated:</p>
+			</div>
+		</div>
+
+		<!-- user score div -->
+		<div class="row">
+			<div class="col-md-3 col-md-offset-1 scoreDiv">
+				<h2 id="userScore">score</h2>
+			</div>
+		</div>
+	
+	<!-- now end the container	 -->
+	</div>
+
+	<!-- Link to game javascript  -->
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>
 </html>
