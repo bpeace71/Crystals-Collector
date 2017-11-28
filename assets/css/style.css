@@ -1,0 +1,22 @@
+body {
+	background: url("../images/stars-background-purple.jpg");
+}
+
+.row {
+	margin-bottom: 10px;
+}
+
+.randomNumberDiv {
+	background-color: red;
+	color: white;
+}
+
+.winsLossesDiv {
+	background-color: green;
+	color: white;
+}
+
+.scoreDiv {
+	background-color: purple;
+	color: white;
+}
