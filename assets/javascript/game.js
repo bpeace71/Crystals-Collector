@@ -19,61 +19,42 @@
 			$("#failTally").html("Fail: " + fail);
 			$("#randomNumber").html(randomGoal);
 			$("#userScore").html(playerScore);
-			consoleLogVariables();
 		}
 
-		function randomWholeNumCrystal() {
-  			return Math.random();
-		}
-		
-		function getRandomFloatGoal(min, max) {
-  			return Math.random() * (19 - 120) + 19;
-		}
 		
 		function winLose() {
 			if (playerScore > randomGoal) {
 				fail++;
-				console.log("user lost");
-				resetValues();
 				alert ("BOOM!!!");
+				resetValues();
+
 			}
 			if (playerScore === randomGoal) {
 				cast++;
-				console.log("user won");
-				resetValues();
 				alert ("Shazam!!");
+				resetValues();
 			}
 		}
-
-		function consoleLogVariables() {
-			console.log("cast: " + cast + " Failed: " + fail);
-			console.log("gemOneValue: ", gemOneValue + " gemTwoValue: " + gemTwoValue + " gemThreeValue: " + gemThreeValue + " gemFourValue: " + gemFourValue);
-			console.log("randomGoal: " + randomGoal + " playerScore: " + playerScore);
-			console.log("----------------------------------");
-
-		}
-
 
 		resetValues();
 
 		$(".gem").on("click", function() {
-			var pressed = $(this).attr("value");
-        	console.log(pressed);
-        	if (pressed == "gem1") {
+			var selected = $(this).attr("value");
+        	if (selected == "gem1") {
         		playerScore += gemOneValue;
-        	} else if (pressed == "gem2") {
+        	} else if (selected == "gem2") {
         		playerScore += gemTwoValue;
-        	} else if (pressed == "gem3") {
+        	} else if (pselected == "gem3") {
         		playerScore += gemThreeValue;
-        	} else if (pressed == "gem4") {
+        	} else if (selected == "gem4") {
         		playerScore += gemFourValue;
         	} else {
         		console.log("error");
         	}
-        	$("#userScore").html(playerScore);
-        	consoleLogVariables();
-        	winLose();
 
+        	$("#userScore").html(playerScore);
+
+        	winLose();
         });
 	});
 
