@@ -44,7 +44,7 @@
         		playerScore += gemOneValue;
         	} else if (selected == "gem2") {
         		playerScore += gemTwoValue;
-        	} else if (pselected == "gem3") {
+        	} else if (selected == "gem3") {
         		playerScore += gemThreeValue;
         	} else if (selected == "gem4") {
         		playerScore += gemFourValue;
