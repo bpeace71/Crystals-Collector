@@ -1,76 +1,60 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Crystals Collector</title>
-	
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+<head>
+    <title>Crystals Collector</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-	
-	<div class="container">
-
-		<div class="jumbotron">
-			<h1><center>Crystals Collector!</center></h1><br />
-			<h4>The wizard requires a certain amount of mana to cast his spell.</h4>
-			<h4>Each crystal adds a specific amount to his total mana, generating different amounts of mana each time a new spell is started.</h4>
-			<h4>You are his apprentice.</h4>
-			<h4>Your job is to tap into his crystals to generate the mana so he can cast his spells. You need to generate the exact number of mana required.</h4>
-			<h4>If you generate too little, he can not cast the spell.</h4>
-			<h4>If you generate too much, it will blow up in his face.</h4>
-		</div>
-		
-		<div class="row">
-			<div class="col-md-3 col-md-offset-1 randomNumberDiv">
-				<p>Mana Needed:</p>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-3 col-md-offset-1 randomNumberDiv">
-				<h2 id="randomNumber">Spell</h2>
-			</div>
-
-		<div class="col-md-3 col-md-offset-1 winsLossesDiv">
-				<p id="castTally">Spells Cast: </p>
-				<p id="failTally">Spells Failed: </p>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-1 col-md-offset-1 gem" value="gem1">
-				<img src="assets/images/gem1.png" height="200%" width="200%">
-			</div>
-			<div class="col-md-1 col-md-offset-1 gem" value="gem2">
-				<img src="assets/images/gem2.png" height="200%" width="200%">
-			</div>
-			<div class="col-md-1 col-md-offset-1 gem" value="gem3">
-				<img src="assets/images/gem3.png" height="175%" width="175%">
-			</div>
-			<div class="col-md-1 col-md-offset-1 gem" value="gem4">
-				<img src="assets/images/gem4.png" height="200%" width="200%">
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="col-md-3 col-md-offset-1 scoreDiv">
-				<p>Mana Generated:</p>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-3 col-md-offset-1 scoreDiv">
-				<h2 id="userScore">Mana</h2>
-			</div>
-		</div>
-	
-	</div>
-
-	<script type="text/javascript" src="assets/javascript/game.js"></script>
-
-
+    <div class="container">
+        <div class="jumbotron">
+            <h1><center>Crystals Collector!</center></h1>
+            <br />
+            <h4>The wizard requires a certain amount of mana to cast his spell.</h4>
+            <h4>Each crystal adds a specific amount to his total mana, generating different amounts of mana each time a new spell is started.</h4>
+            <h4>You are his apprentice.</h4>
+            <h4>Your job is to tap into his crystals to generate the mana so he can cast his spells. You need to generate the exact number of mana required.</h4>
+            <h4>If you generate too little, he can not cast the spell.</h4>
+            <h4>If you generate too much, it will blow up in his face.</h4>
+        </div>
+        <div class="row">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1 col-md-offset-1 gem" value="gem1">
+            <img src="assets/images/gem1.png" height="200%" width="200%">
+        </div>
+        <div class="col-md-1 col-md-offset-1 gem" value="gem2">
+            <img src="assets/images/gem2.png" height="200%" width="200%">
+        </div>
+        <div class="col-md-1 col-md-offset-1 gem" value="gem3">
+            <img src="assets/images/gem3.png" height="175%" width="175%">
+        </div>
+        <div class="col-md-1 col-md-offset-1 gem" value="gem4">
+            <img src="assets/images/gem4.png" height="200%" width="200%">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 col-md-offset-1 randomNumberDiv">
+            <center>
+                <p>Mana Needed:
+                    <h2 id="randomNumber">Spell</h2>
+                </p>
+            </center>
+        </div>
+        <div class="col-md-3 col-md-offset-1 scoreDiv">
+            <center>
+                <p>Mana Generated:
+                    <h2 id="userScore">Mana</h2>
+                </p>
+            </center>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
+
 </html>

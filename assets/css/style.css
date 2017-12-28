@@ -9,6 +9,7 @@ body {
 .randomNumberDiv {
 	background-color: red;
 	color: white;
+	font-size: 30px;
 }
 
 .winsLossesDiv {
@@ -19,4 +20,5 @@ body {
 .scoreDiv {
 	background-color: purple;
 	color: white;
+	font-size: 30px;
 }
