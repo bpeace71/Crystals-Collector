@@ -1,4 +1,4 @@
-# crystals-collector
+# Crystals Collector
 
 by Brian Peace
 
